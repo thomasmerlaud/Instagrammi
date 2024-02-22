@@ -1,14 +1,116 @@
-<p style="color: green"><%= notice %></p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagrammi</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <a href="#" class="logo">
+        <%= image_tag "Instagrammi.svg" %>
+      </a>
+      <div class="menu">
+        <a href="#" class="active">
+          <span class="icon">
+            <i class="ri-home-2-line"></i>
+          </span>
+          Accueil
+        </a>
+        <a href="#">
+          <span class="icon">
+            <i class="ri-search-line"></i>
+          </span>
+          Rechercher
+        </a>
+        <a href="#">
+          <span class="icon">
+            <i class="ri-compass-line"></i>
+          </span>
+          Découvrir
+        </a>
+        <a href="#">
+          <span class="icon">
+            <i class="ri-film-line"></i>
+          </span>
+          Reels
+        </a>
+        <a href="#">
+          <span class="icon">
+            <i class="ri-chat-1-line"></i>
+          </span>
+          Messages
+        </a>
+        <a href="<%= new_post_path %>" class="create-post">
+    <span class="icon">
+      <i class="ri-add-box-line"></i>
+    </span>
+    Créer
+  </a>
+        <a href="#">
+          <span class="icon">
+            <i class="ri-user-line"></i>
+          </span>
+          Profil
+        </a>
+        <a href="#">
+          <span class="icon">
+            <i class="ri-threads-line"></i>
+          </span>
+          Threads
+        </a>
+        <a href="#">
+          <span class="icon">
+            <i class="ri-settings-3-line"></i>
+          </span>
+          Paramètres
+        </a>
+      </div>
+    </div>
 
-<h1>Posts</h1>
+    <!-- Stories 1 -->
+    <div class="stories">
+      <div class="stories-img color">
+        <%= image_tag "acteursMMI.jpg" %>
+        <div class="add">+</div>
 
-<div id="posts">
-  <% @posts.each do |post| %>
-    <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
-  <% end %>
+<!-- Stories 2 -->
+
+      </div>
+      <div class="stories-img color">
+        <%= image_tag "acteursMMI.jpg" %>
+      </div>
+
+      <!-- Stories 3 -->
+      <div class="stories-img color">
+        <%= image_tag "acteursMMI.jpg" %>
+      </div>
+
+       <!-- Stories 4 -->
+       <div class="stories-img color">
+        <%= image_tag "acteursMMI.jpg" %>
+      </div>
+
+
+    </div>
 </div>
 
-<%= link_to "New post", new_post_path %>
+       <!-- Posts-->
+
+</body>
+</html>
+
+
+<div id="posts" class="posts-container">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <%= render post %>
+      <p>
+        <%= link_to "Show this post", post %>
+      </p>
+    </div>
+  <% end %>
+</div>

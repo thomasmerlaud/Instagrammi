@@ -1,14 +1,15 @@
-<div id="<%= dom_id post %>">
-  <p>
+<div class="post-container" id="<%= dom_id post %>">
+  <p class="post-title">
     <strong>Titre:</strong>
     <%= post.titre %>
   </p>
 
-  <p>
+  <p class="post-description">
     <strong>Description:</strong>
     <%= post.description %>
   </p>
 
- <img src="<%= post.image %>">
-
+  <div class="post-image">
+    <img src="<%= post.image %>">
+  </div>
 </div>

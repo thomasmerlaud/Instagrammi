@@ -13,3 +13,169 @@
  *= require_tree .
  *= require_self
  */
+ * {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #f8f8f8;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background: #f3f2f2;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  height: 100vh; /* Prend toute la hauteur de la vue */
+  position: fixed; /* Fixe la position de la barre latérale */
+  top: 0; /* Fixe la barre latérale en haut de la fenêtre */
+  left: 0; /* Fixe la barre latérale sur le côté gauche de la fenêtre */
+  z-index: 999; /* Assure que la barre latérale est au-dessus du contenu principal */
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu a {
+  font-size: 1rem;
+  color: #050505;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.menu a:hover,
+.menu .active,
+.menu .create-post:hover {
+  color: #767575;
+}
+
+.menu .icon {
+  margin-right: 10px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+ .stories-title .btn {
+   display: flex;
+   align-items: center;
+   color: #050505;
+ }
+  .stories-title .btn i {
+   font-size: 24px;
+   margin-right: 10px;
+
+  }
+
+  .stories{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 2rem;
+  }
+  .stories-img{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ border:2px solid #ea1f5f;
+  }
+
+  .stories-img img {
+   width: 70px;
+   height: 70px;
+   object-fit: cover;
+   border-radius: 50%;
+   object-position: center;
+  }
+ .stories-img.color{
+   border: 2px solid #f8f8f8;
+ }
+
+ .stories-img .add {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 20px;
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   color: #F3F2F2;
+   background: hsla(246, 100%, 100%, 0.);
+ }
+
+
+
+ .posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post-description {
+  margin-bottom: 10px;
+}
+
+.post-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.new-post-link {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.new-post-link:hover {
+  background-color: #2980b9;
+}
