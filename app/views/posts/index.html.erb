@@ -9,6 +9,7 @@
 </head>
 <body>
   <div class="container">
+    <!-- Sidebar -->
     <div class="sidebar">
       <a href="#" class="logo">
         <%= image_tag "Instagrammi.svg" %>
@@ -45,11 +46,11 @@
           Messages
         </a>
         <a href="<%= new_post_path %>" class="create-post">
-    <span class="icon">
-      <i class="ri-add-box-line"></i>
-    </span>
-    Créer
-  </a>
+          <span class="icon">
+            <i class="ri-add-box-line"></i>
+          </span>
+          Créer
+        </a>
         <a href="#">
           <span class="icon">
             <i class="ri-user-line"></i>
@@ -71,46 +72,46 @@
       </div>
     </div>
 
-    <!-- Stories 1 -->
-    <div class="stories">
-      <div class="stories-img color">
-        <%= image_tag "acteursMMI.jpg" %>
-        <div class="add">+</div>
+    <!-- Contenu principal -->
+    <div class="main-content">
+      <!-- Stories -->
+      <div class="stories-container">
+        <!-- Stories 1 -->
+        <div class="stories">
+          <div class="stories-img color">
+            <%= image_tag "acteursMMI.jpg" %>
+            <div class="add">+</div>
+          </div>
 
-<!-- Stories 2 -->
+          <!-- Stories 2 -->
+          <div class="stories-img color">
+            <%= image_tag "acteursMMI.jpg" %>
+          </div>
 
+          <!-- Stories 3 -->
+          <div class="stories-img color">
+            <%= image_tag "acteursMMI.jpg" %>
+          </div>
+
+          <!-- Stories 4 -->
+          <div class="stories-img color">
+            <%= image_tag "acteursMMI.jpg" %>
+          </div>
+        </div>
       </div>
-      <div class="stories-img color">
-        <%= image_tag "acteursMMI.jpg" %>
+
+      <!-- Posts -->
+      <div id="posts" class="posts-container">
+        <% @posts.each do |post| %>
+          <div class="post">
+            <%= render post %>
+            <p>
+              <%= link_to "Show this post", post %>
+            </p>
+          </div>
+        <% end %>
       </div>
-
-      <!-- Stories 3 -->
-      <div class="stories-img color">
-        <%= image_tag "acteursMMI.jpg" %>
-      </div>
-
-       <!-- Stories 4 -->
-       <div class="stories-img color">
-        <%= image_tag "acteursMMI.jpg" %>
-      </div>
-
-
     </div>
-</div>
-
-       <!-- Posts-->
-
+  </div>
 </body>
 </html>
-
-
-<div id="posts" class="posts-container">
-  <% @posts.each do |post| %>
-    <div class="post">
-      <%= render post %>
-      <p>
-        <%= link_to "Show this post", post %>
-      </p>
-    </div>
-  <% end %>
-</div>
