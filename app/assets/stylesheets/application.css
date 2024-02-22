@@ -220,3 +220,22 @@ body {
 .form-submit:hover {
   background-color: #2683e0;
 }
+
+.action i.liked {
+  color: red;
+}
+
+.instagram-button {
+  display: inline-block;
+  background-color: #3897f0;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.instagram-button:hover {
+  background-color: #2683e0;
+}

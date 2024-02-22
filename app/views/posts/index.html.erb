@@ -6,6 +6,22 @@
   <title>Instagrammi</title>
   <link rel="stylesheet" href="/src/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Ajout de jQuery -->
+  <script>
+    $(document).ready(function() {
+      $('.action i').click(function() {
+        $(this).toggleClass('liked');
+        // Vérifier si l'icône a la classe 'liked' après le basculement de la classe
+        if ($(this).hasClass('liked')) {
+          // Si oui, ajouter le code pour enregistrer le fait que l'utilisateur a aimé ce post
+          // Vous pouvez mettre ici le code pour effectuer une action en arrière-plan, par exemple envoyer une requête AJAX
+        } else {
+          // Sinon, ajouter le code pour annuler l'action précédente, par exemple annuler un like déjà enregistré
+          // Vous pouvez mettre ici le code pour effectuer une action en arrière-plan, par exemple envoyer une requête AJAX
+        }
+      });
+    });
+  </script>
 </head>
 <body>
   <div class="container">
