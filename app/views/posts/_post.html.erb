@@ -9,8 +9,6 @@
     <%= post.description %>
   </p>
 
-  <% post.images.each do |images|%>
-    <%= image_tag(image)  %>
-  <% end  %>
+ <img src="<%= post.image %>">
 
 </div>
