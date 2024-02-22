@@ -57,19 +57,14 @@ body {
   margin-left: 250px;
 }
 
-.posts-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .post {
   width: 100%;
   max-width: 600px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
+  margin: 20px auto; /* Pour centrer le post horizontalement avec un espacement de 20px en haut et en bas */
+  border-top: 1px solid #dbdbdb; /* Bordure grise */
+  background-color: #fff;
 }
+
 
 .post-container {
   display: flex;
@@ -77,17 +72,34 @@ body {
 }
 
 .post-title {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.post-description {
-  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  padding: 8px;
 }
 
 .post-image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  border-top-left-radius: 3px; /* Coins arrondis en haut à gauche */
+  border-top-right-radius: 3px; /* Coins arrondis en haut à droite */
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+
+}
+
+.action {
+  flex: 1;
+  text-align: center;
+}
+
+.action i {
+  font-size: 20px;
+  color: #262626; /* Couleur des icônes */
 }
 
 .new-post-link {
@@ -95,16 +107,17 @@ body {
   width: 200px;
   margin: 20px auto;
   text-align: center;
-  background-color: #3498db;
-  color: #fff;
+  background-color: #3897f0; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
 }
 
 .new-post-link:hover {
-  background-color: #2980b9;
+  background-color: #2683e0; /* Couleur de fond au survol */
 }
+
 
 .stories-container {
   display: flex;
@@ -156,4 +169,54 @@ body {
   border-radius: 50%;
   color: #f3f2f2;
   background: hsla(246, 100%, 100%, 0);
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.form-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.form-submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3897f0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background-color: #2683e0;
 }

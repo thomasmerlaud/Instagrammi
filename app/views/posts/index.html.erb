@@ -21,7 +21,7 @@
           </span>
           Accueil
         </a>
-        <a href="#">
+        <a href="index.html.erb">
           <span class="icon">
             <i class="ri-search-line"></i>
           </span>
@@ -100,17 +100,40 @@
         </div>
       </div>
 
-      <!-- Posts -->
-      <div id="posts" class="posts-container">
-        <% @posts.each do |post| %>
-          <div class="post">
-            <%= render post %>
-            <p>
-              <%= link_to "Show this post", post %>
-            </p>
+     <!-- Posts -->
+<div id="posts" class="posts-container">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <div class="post-container" id="<%= dom_id post %>">
+        <p class="post-title">
+          <strong>Titre:</strong>
+          <%= post.titre %>
+        </p>
+
+        <div class="post-image">
+          <img src="<%= post.image %>">
+        </div>
+
+        <div class="post-actions">
+          <div class="action">
+            <i class="ri-heart-line"></i>
           </div>
-        <% end %>
+          <div class="action">
+            <i class="ri-chat-3-line"></i>
+          </div>
+          <div class="action">
+            <i class="ri-send-plane-line"></i> <!-- Icône de l'avion en papier -->
+          </div>
+        </div>
       </div>
+      <p>
+        <%= link_to "Show this post", post %>
+      </p>
+    </div>
+  <% end %>
+</div>
+
+
     </div>
   </div>
 </body>

@@ -1,31 +1,68 @@
-<%= form_with(model: post) do |form| %>
-  <% if post.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
-
-      <ul>
-        <% post.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagrammi</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="#" class="logo">
+        <%= image_tag "Instagrammi.svg" %>
+      </a>
+      <div class="menu">
+        <a href="#" class="active">
+          <span class="icon">
+            <i class="ri-home-2-line"></i>
+          </span>
+          Accueil
+        </a>
+        <!-- Ajoutez d'autres liens de la barre latérale ici -->
+      </div>
     </div>
-  <% end %>
 
+    <!-- Contenu principal -->
+    <div class="main-content">
+      <!-- Formulaire -->
+      <div class="form-container">
+        <%= form_with(model: post, html: { class: "form-container" }) do |form| %>
+          <% if post.errors.any? %>
+            <div style="color: red">
+              <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
-  <div>
-    <%= form.label :titre, style: "display: block" %>
-    <%= form.text_field :titre %>
+              <ul>
+                <% post.errors.each do |error| %>
+                  <li><%= error.full_message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+          <div class="form-field">
+            <%= form.label :titre, "Titre", class: "form-label" %>
+            <%= form.text_field :titre, class: "form-input", placeholder: "Ajouter un titre" %>
+          </div>
+
+          <div class="form-field">
+            <%= form.label :description, "Description", class: "form-label" %>
+            <%= form.text_field :description, class: "form-input", placeholder: "Ajouter une description" %>
+          </div>
+
+          <div class="form-field">
+            <%= form.label :image, "URL de l'image", class: "form-label mb-2" %>
+            <%= form.text_field :image, class: "form-input", placeholder: "Insérez l'URL de votre image" %>
+          </div>
+
+          <div class="form-field">
+            <%= form.submit "Publier", class: "form-submit" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
-
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
-
-  <%= form.label "URL de votre image", style: "display: block", class: "mb-2" %>
-    <%= form.text_field :image, class: "form-control", placeholder: "Insérez l'URL de votre image"  %>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+</body>
+</html>
