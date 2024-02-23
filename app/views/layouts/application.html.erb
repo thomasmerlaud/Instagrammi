@@ -18,17 +18,19 @@
       <div class="container">
     <!-- Sidebar -->
     <div class="sidebar">
-      <a href="#" class="logo">
+      <a href="<%= posts_path %>" class="logo">
         <%= image_tag "logoinstagrammi.svg" %>
       </a>
       <div class="menu">
-        <a href="#" class="active">
+        <b>
+        <a href="<%= posts_path %>">
           <span class="icon">
-            <i class="ri-home-2-line"></i>
+            <i class="ri-home-line"></i>
           </span>
           Accueil
         </a>
-        <a href="../posts/index.html.erb">
+         </b>
+        <a href="#">
           <span class="icon">
             <i class="ri-search-line"></i>
           </span>
@@ -53,10 +55,12 @@
           Messages
         </a>
         <a href="<%= new_post_path %>" class="create-post">
+        <b>
           <span class="icon">
             <i class="ri-add-box-line"></i>
           </span>
           Créer
+          </b>
         </a>
         <a href="#">
           <span class="icon">

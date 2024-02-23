@@ -54,6 +54,7 @@ body {
   flex: 1;
   padding: 20px;
   background-color: #fff;
+  margin-left: 19%;
 
 }
 
@@ -262,4 +263,22 @@ body {
 
 .instagram-button:active {
   background-color: #1e67c8;
+}
+
+/* Media query pour cibler les écrans de taille maximale de 600px (adapté pour les smartphones en mode portrait) */
+@media only screen and (max-width: 600px) {
+
+
+  .sidebar {
+    display: none; /* Fait disparaître la sidebar */
+  }
+
+  .container {
+    flex-direction: column; /* Change la direction de la disposition des éléments en colonne */
+  }
+
+  .main-content {
+    width: 100%; /* Ajuste la largeur du contenu principal pour remplir l'écran */
+    margin:0
+  }
 }
