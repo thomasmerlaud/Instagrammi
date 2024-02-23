@@ -59,9 +59,10 @@ body {
 }
 
 .post {
+
   width: 100%;
   max-width: 600px;
-  margin: 20px auto; /* Pour centrer le post horizontalement avec un espacement de 20px en haut et en bas */
+  margin: 40px auto; /* Pour centrer le post horizontalement avec un espacement de 20px en haut et en bas */
   border-top: 1px solid #dbdbdb; /* Bordure grise */
   background-color: #fff;
 }
