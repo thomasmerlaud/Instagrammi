@@ -1,15 +1,15 @@
-# RoR Instagram clone
+# RoR Instagram Clone
 
-## This project is a clone of the Instagram application.
+## Introduction
 
-This project is a simplified version of the popular social network Instagram, developed using the Ruby on Rails framework. It offers similar functionalities to the original application and is available in both mobile and desktop versions.
+This project is a clone of the Instagram application, developed as part of the MMI (Métiers du Multimédia et de l'Internet) training program in Bordeaux. It offers similar functionalities to the original application and is available in both mobile and desktop versions.
 
 ### Key Features:
 
-- **CRUD**: This project implements CRUD (Create, Read, Update, Delete) operations, allowing users to publish and manage their posts.
-- **Photo posting**: Users can post photos with associated descriptions, replicating the functionality of the Instagram application.
-- **Post editing**: Users have the ability to edit and delete their existing posts.
-- **MMI Bordeaux Training**: This project was developed as part of the MMI (Métiers du Multimédia et de l'Internet) training program in Bordeaux, aimed at learning and practicing web development concepts.
+- **CRUD Operations**: This project implements CRUD (Create, Read, Update, Delete) operations, allowing users to publish and manage their posts.
+- **Photo Posting**: Users can post photos with associated descriptions, replicating the functionality of the Instagram application.
+- **Post Editing**: Users have the ability to edit and delete their existing posts.
+- **MMI Bordeaux Training**: This project was developed as part of the MMI program in Bordeaux, aimed at learning and practicing web development concepts.
 
 ### Technologies Used:
 
@@ -26,8 +26,12 @@ This project is a simplified version of the popular social network Instagram, de
 5. Start the Rails server with `rails server`.
 6. Access the application in your browser at `http://localhost:3000`.
 
-### Author:
+### Credits:
 
-This project was developed by Thomas Merlaud in collaboration with Eva Garbuïo--Binaud as part of the MMI program in Bordeaux.
+- All images used in this project were created by Midjourney.
+
+### Authors:
+
+This project was developed by Thomas Merlaud in collaboration with Eva Garbuïo--Binaud.
 
 For any questions or suggestions, feel free to contact me at tmerlaud@proton.me.
