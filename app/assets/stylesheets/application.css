@@ -8,8 +8,8 @@
 }
 
 body {
-  background: #f8f8f8;
   margin: 0;
+  background-color:#fff;
 }
 
 .container {
@@ -54,7 +54,7 @@ body {
   flex: 1;
   padding: 20px;
   background-color: #fff;
-  margin-left: 250px;
+
 }
 
 .post {

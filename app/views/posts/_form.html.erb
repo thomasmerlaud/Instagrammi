@@ -1,23 +1,5 @@
 
-  <div class="container">
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <a href="#" class="logo">
-        <%= image_tag "Instagrammi.svg" %>
-      </a>
-      <div class="menu">
-        <a href="#" class="active">
-          <span class="icon">
-            <i class="ri-home-2-line"></i>
-          </span>
-          Accueil
-        </a>
-        <!-- Ajoutez d'autres liens de la barre latérale ici -->
-      </div>
-    </div>
-
-    <!-- Contenu principal -->
-    <div class="main-content">
+    <div style="margin-left: 10%;" class="main-content">
       <!-- Formulaire -->
       <div class="form-container">
         <%= form_with(model: post, html: { class: "form-container" }) do |form| %>
