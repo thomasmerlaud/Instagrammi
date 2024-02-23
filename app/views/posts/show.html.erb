@@ -1,4 +1,4 @@
-<div style="margin-left: 35%; margin-top: 50px; text-align: center;">
+<div style="margin-left: 37%; margin-top: 50px; text-align: center;">
   <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">Configuration de post</h2>
   <!-- Affichage de l'image du post -->
   <%= image_tag @post.image, style: "max-width: 600px; height: auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" %>
@@ -9,7 +9,7 @@
   <!-- Ajoutez ici d'autres détails du post si nécessaire -->
 
   <!-- Boutons pour éditer, supprimer et revenir -->
-  <div style="margin-top: 10px; display: flex; justify-content: center;">
+  <div style="margin-top: 30px; display: flex; justify-content: center;">
     <%= link_to "Edit this post", edit_post_path(@post), class: "instagram-button", style: "margin-right: 10px;" %>
     <%= button_to "Destroy this post", @post, method: :delete, data: { confirm: "Are you sure?" }, class: "instagram-button", style: "background-color: #ed4956; margin-right: 10px;" %>
     <%= link_to "Back to posts", posts_path, class: "instagram-button" %>
