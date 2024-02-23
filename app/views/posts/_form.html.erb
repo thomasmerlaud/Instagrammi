@@ -1,5 +1,6 @@
 
     <div style="margin-left: 10%;" class="main-content">
+    <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 20px; margin-left: 20%;">Publication</h2>
       <!-- Formulaire -->
       <div class="form-container">
         <%= form_with(model: post, html: { class: "form-container" }) do |form| %>
@@ -16,12 +17,12 @@
           <% end %>
 
           <div class="form-field">
-            <%= form.label :titre, "Titre", class: "form-label" %>
+            <%= form.label :titre, "Pseudo", class: "form-label" %>
             <%= form.text_field :titre, class: "form-input", placeholder: "Ajouter un titre" %>
           </div>
 
           <div class="form-field">
-            <%= form.label :description, "Description", class: "form-label" %>
+            <%= form.label :description, "Description de post", class: "form-label" %>
             <%= form.text_field :description, class: "form-input", placeholder: "Ajouter une description" %>
           </div>
 
