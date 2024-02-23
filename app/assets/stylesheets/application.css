@@ -272,7 +272,9 @@ body {
   margin-left: 97%;
 }
 
-
+.insta-mobile{
+  display:none;
+}
 
 
 /* Media query pour cibler les écrans de taille maximale de 600px (adapté pour les smartphones en mode portrait) */
@@ -290,5 +292,19 @@ body {
   .main-content {
     width: 100%; /* Ajuste la largeur du contenu principal pour remplir l'écran */
     margin:0
+  }
+
+  .insta-mobile{
+    margin-top: 5%;
+    margin-left: 5%;
+    display:flex;
+    width: 30%;
+    height: auto;
+  }
+
+  .icon-post{
+    display: flex;
+    margin-left: 100%;
+    margin-top: 50%;
   }
 }
