@@ -240,3 +240,26 @@ body {
 .action i.liked {
   color: red;
 }
+
+.instagram-button {
+  display: inline-block;
+  background-color: #3897f0;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.instagram-button:hover {
+  background-color: #2683e0;
+}
+
+.instagram-button:active {
+  background-color: #1e67c8;
+}

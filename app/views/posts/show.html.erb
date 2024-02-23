@@ -1,15 +1,17 @@
-<%= render @post %>
+<div style="margin-top: 50px; text-align: center;">
+  <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">Configuration de post</h2>
+  <!-- Affichage de l'image du post -->
+  <%= image_tag @post.image, style: "max-width: 600px; height: auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" %>
 
-<div style="margin-top: 20px; text-align: center;">
-  <div style="max-width: 400px; margin: 0 auto;">
-    <%= image_tag @post.image, style: "max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 5px;" %>
-  </div>
-
+  <!-- Affichage du titre, de la description et des autres détails -->
   <p style="font-size: 16px; font-weight: bold; margin-top: 10px;"><%= @post.titre %></p>
+  <p style="font-size: 14px;"><%= @post.description %></p>
+  <!-- Ajoutez ici d'autres détails du post si nécessaire -->
 
-  <div style="margin-top: 10px;">
-    <%= link_to "Edit this post", edit_post_path(@post), class: "instagram-button" %>
-    <%= button_to "Destroy this post", @post, method: :delete, data: { confirm: "Are you sure?" }, class: "instagram-button" %>
+  <!-- Boutons pour éditer, supprimer et revenir -->
+  <div style="margin-top: 10px; display: flex; justify-content: center;">
+    <%= link_to "Edit this post", edit_post_path(@post), class: "instagram-button", style: "margin-right: 10px;" %>
+    <%= button_to "Destroy this post", @post, method: :delete, data: { confirm: "Are you sure?" }, class: "instagram-button", style: "background-color: #ed4956; margin-right: 10px;" %>
     <%= link_to "Back to posts", posts_path, class: "instagram-button" %>
   </div>
 </div>
