@@ -187,6 +187,12 @@ body {
   border-radius: 50%;
   color: #f3f2f2;
   background: hsla(246, 100%, 100%, 0);
+
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid transparent;
+  opacity: 0.7; /* Ajout du filtre d'opacité */
 }
 
 .form-container {
