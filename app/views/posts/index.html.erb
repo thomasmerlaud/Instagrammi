@@ -66,6 +66,15 @@
           <%= post.titre %>
         </p>
 
+                <%= link_to post_path(post) do %>
+        <b>
+          <div class="three-dots-icon"> <!-- Ajouter une classe pour le style du conteneur de l'icône -->
+            <i class="ri-more-line"></i> <!-- Utiliser une icône représentant trois petits points -->
+          </div>
+        </b>
+        </div>
+<% end %>
+
         <div class="post-image">
           <img src="<%= post.image %>">
         </div>
@@ -86,10 +95,8 @@
           <%= post.description %>
         </div>
 
-      </div>
-      <p>
-        <%= link_to "Show this post", post %>
-      </p>
+
+
     </div>
   <% end %>
 </div>

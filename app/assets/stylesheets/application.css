@@ -265,6 +265,15 @@ body {
   background-color: #1e67c8;
 }
 
+
+
+.three-dots-icon {
+  margin-left: 97%
+}
+
+
+
+
 /* Media query pour cibler les écrans de taille maximale de 600px (adapté pour les smartphones en mode portrait) */
 @media only screen and (max-width: 600px) {
 
