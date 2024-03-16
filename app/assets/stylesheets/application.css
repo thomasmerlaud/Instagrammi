@@ -62,8 +62,8 @@ body {
 
   width: 100%;
   max-width: 600px;
-  margin: 40px auto; /* Pour centrer le post horizontalement avec un espacement de 20px en haut et en bas */
-  border-top: 1px solid #dbdbdb; /* Bordure grise */
+  margin: 40px auto;
+  border-top: 1px solid #dbdbdb;
   background-color: #fff;
 }
 
@@ -85,8 +85,8 @@ body {
 .post-image img {
   width: 100%;
   height: auto;
-  border-top-left-radius: 3px; /* Coins arrondis en haut à gauche */
-  border-top-right-radius: 3px; /* Coins arrondis en haut à droite */
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .post-actions {
@@ -103,7 +103,7 @@ body {
 
 .action i {
   font-size: 20px;
-  color: #262626; /* Couleur des icônes */
+  color: #262626;
 }
 
 .post-description {
@@ -111,12 +111,12 @@ body {
   padding: 8px;
 }
 
-/* Ajoutez une marge en haut pour séparer la description des actions */
+
 .post-actions {
   display: flex;
   justify-content: space-between;
   padding: 8px;
-  margin-top: 10px; /* Ajoutez cette ligne */
+  margin-top: 10px;
 }
 
 
@@ -125,15 +125,15 @@ body {
   width: 200px;
   margin: 20px auto;
   text-align: center;
-  background-color: #3897f0; /* Couleur de fond */
-  color: #fff; /* Couleur du texte */
+  background-color: #3897f0;
+  color: #fff;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
 }
 
 .new-post-link:hover {
-  background-color: #2683e0; /* Couleur de fond au survol */
+  background-color: #2683e0;
 }
 
 
@@ -158,7 +158,7 @@ body {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #f3d313 20%, #c80bb1 80%); /* Dégradé de jaune à rose */
+  background: linear-gradient(45deg, #f3d313 20%, #c80bb1 80%);
   margin-right: 10px;
 }
 
@@ -168,11 +168,11 @@ body {
   object-fit: cover;
   border-radius: 50%;
   object-position: center;
-  border: 2px solid transparent; /* Ajout d'une bordure transparente pour le contour */
+  border: 2px solid transparent;
 }
 
 .stories-img.color {
-  border: none; /* Suppression de la bordure blanche pour les images sans couleur */
+  border: none;
 }
 
 
@@ -192,7 +192,7 @@ body {
   object-fit: cover;
   object-position: center;
   border: 2px solid transparent;
-  opacity: 0.7; /* Ajout du filtre d'opacité */
+  opacity: 0.7;
 }
 
 .form-container {
@@ -283,20 +283,20 @@ body {
 }
 
 
-/* Media query pour cibler les écrans de taille maximale de 600px (adapté pour les smartphones en mode portrait) */
+
 @media only screen and (max-width: 600px) {
 
 
   .sidebar {
-    display: none; /* Fait disparaître la sidebar */
+    display: none;
   }
 
   .container {
-    flex-direction: column; /* Change la direction de la disposition des éléments en colonne */
+    flex-direction: column;
   }
 
   .main-content {
-    width: 100%; /* Ajuste la largeur du contenu principal pour remplir l'écran */
+    width: 100%;
     margin:0
   }
 

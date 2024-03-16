@@ -3,13 +3,8 @@
     $(document).ready(function() {
       $('.ri-heart-line').click(function() {
         $(this).toggleClass('liked');
-        // Vérifier si l'icône a la classe 'liked' après le basculement de la classe
         if ($(this).hasClass('liked')) {
-          // Si oui, ajouter le code pour enregistrer le fait que l'utilisateur a aimé ce post
-          // Vous pouvez mettre ici le code pour effectuer une action en arrière-plan, par exemple envoyer une requête AJAX
         } else {
-          // Sinon, ajouter le code pour annuler l'action précédente, par exemple annuler un like déjà enregistré
-          // Vous pouvez mettre ici le code pour effectuer une action en arrière-plan, par exemple envoyer une requête AJAX
         }
       });
     });
@@ -17,7 +12,6 @@
 </head>
 <body>
 
-    <!-- Contenu principal -->
     <div class="main-content">
       <!-- Stories -->
       <div class="stories-container">
@@ -67,8 +61,8 @@
 
                 <%= link_to post_path(post) do %>
         <b>
-          <div class="three-dots-icon"> <!-- Ajouter une classe pour le style du conteneur de l'icône -->
-            <i class="ri-more-line"></i> <!-- Utiliser une icône représentant trois petits points -->
+          <div class="three-dots-icon">
+            <i class="ri-more-line"></i>
           </div>
         </b>
         </div>
@@ -86,7 +80,7 @@
             <i class="ri-chat-3-line"></i>
           </div>
           <div class="action">
-            <i class="ri-send-plane-line"></i> <!-- Icône de l'avion en papier -->
+            <i class="ri-send-plane-line"></i>
           </div>
         </div>
         <div class="post-description">
